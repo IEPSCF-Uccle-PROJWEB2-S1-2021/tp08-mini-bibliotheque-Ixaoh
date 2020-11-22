@@ -6,6 +6,15 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+  <form action="/books/list" method="post">
+    <select name ="categorie" id="research">
+    <option value = "">--Choissisez une catégorie--</option>
+    <option value = "romanHistorique">Roman Historique</option>
+    <option value="fantasy">Fantasy</option>
+    <option value = "autobiographie">Autobiographie</option>
+    <option value="all">Tout voir</option>
+    </select>
+    <p><button type="research">Lancer la recherche</button></p>
+  </form>
+
 </html>
